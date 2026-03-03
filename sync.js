@@ -20,8 +20,10 @@ const ENDPOINT = `${API_URL}/api/v2/token-list`;
 
 // Human-readable chain names for the markdown table header
 const CHAIN_NAMES = {
+  // Ethereum
   1: 'Ethereum',
   11155111: 'Sepolia',
+  // OP Stack L2s
   8453: 'Base',
   84532: 'Base Sepolia',
   10: 'Optimism',
@@ -38,6 +40,15 @@ const CHAIN_NAMES = {
   1946: 'Soneium Minato',
   57073: 'Ink',
   763373: 'Ink Sepolia',
+  // V5 CCIP chains
+  137: 'Polygon',
+  80002: 'Polygon Amoy',
+  42161: 'Arbitrum',
+  421614: 'Arbitrum Sepolia',
+  43114: 'Avalanche',
+  43113: 'Avalanche Fuji',
+  56: 'BNB Chain',
+  97: 'BNB Testnet',
 };
 
 function fetchJSON(url) {
